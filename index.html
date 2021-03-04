@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="Images/twicelogo.jpg">
+        <title>Twice Fan</title>
+    </head>
+    <body>
+       <header>
+        <div>
+            <form>
+                <label for="Email">Email:</label>
+                
+                <input type="text" id="Email" name="Email" value=""><br>
+                
+                <div class="btn submit">
+                    <input type="button" id="submitter" value="Submit">
+                </div>
+
+
+            </form>
+        </div>
+
+        <div id="successMessage" class="messageContainer">
+            <p>Sign-up was successful.</p>
+        </div>
+
+        <div id="errorMessage" class="messageContainer">
+            <p>*Please enter a correct email address.*</p>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="signup.js"></script>
+
+    </header>
+    </body>
+</html>

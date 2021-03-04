@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #555;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/twice-1.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+form{
+    text-align: center;
+    padding: 100px 100px;
+}
+
+form input{
+    margin-top: 30px;
+}
+
+.messageContainer{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    color: green;
+    padding: 15px 50px;
+}
+
+
+label{
+    color: #fff;
+}
+
+input[type= text]{
+    width: 25%;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*input[type= button]:link,
+input[type= button]:visited{
+    background-color: #181818;
+    border: 1px solid #ffffff;
+    color: rgb(196, 40, 40);
+}*/
+
+input[type= button]:hover,
+input[type= button]:active{
+    background-color: #cccccc;
+}
+
+
+input[type= button]{
+    height: 50px;
+    width: 150px;
+    font-size:xx-large;
+    text-align: center;
+    border-radius: 200px;
+}
