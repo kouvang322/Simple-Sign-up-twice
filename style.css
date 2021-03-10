@@ -21,6 +21,11 @@ header{
     background-attachment: fixed;
 }
 
+h1{
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
 .flex-container{
     display: flex;
 }
@@ -29,6 +34,8 @@ header{
     margin: 25px 25px;
     float: left;
     color: white;
+    box-shadow: 10px 10px 20px #618;
+    border-radius: 2%;
 }
 
 .memberPictures{
@@ -85,10 +92,6 @@ header{
 
 } */
 
-/* .memberphotos{
-    width: 100%;
-    list-style: none;
-} */
 
 .twiceInfo{
     background-color: purple;
@@ -121,9 +124,16 @@ header{
 }
 
 .signUpForm{
-    background-color: antiquewhite;
+    display: flex;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(187, 70, 70, 0.7), rgba(0, 0, 0, 0.7)), url(Images/Twicegroup.jpg);
+    background-repeat: no-repeat;
     margin: 30px 20%;
 }
+
+/* #submissionFormContainer{
+    flex-grow: 0;
+} */
 
 .signUp{
     margin-top: 20px;
