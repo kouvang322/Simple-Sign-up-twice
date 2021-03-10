@@ -1,38 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" href="Images/twicelogo.jpg">
-        <title>Twice Fan</title>
-    </head>
-    <body>
-       <header>
-        <div>
-            <form>
-                <label for="Email">Email:</label>
-                
-                <input type="text" id="Email" name="Email" value=""><br>
-                
-                <div class="btn submit">
-                    <input type="button" id="submitter" value="Submit">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Images/twicelogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Twice Fan</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="flex-container">
+
+            <div class="twiceInfo">
+                <h1>About Twice</h1>
+                <p>Twice is a K-pop group in South Korea.</p>
+            </div>
+
+            <div class="members">
+                <h1>Twice Members</h1>
+                <p>Im Nayeon<br>Yoo Jeongyeon<br>Hirai Momo<br>Minatozaki Sana<br>Park Jihyo<br>Myoui Mina<br>Kim
+                    Dahyun<br>Son Chaeyoung<br>Chou Tzuyu</p>
+            </div>
+
+        </div>
+
+
+        <section>
+            <div class="flex-container">
+
+                <div class="achievements">
+                    <h1>Twice's Achievements</h1>
+                    <p>Best selling girl-group in Korea</p>
+                </div>
+                <div class="pastConcerts">
+                    <h1>Twice's Past Concerts</h1>
+                    <p>Some concerts that twice has performed</p>
+                </div>
+                <div class="albums">
+                    <h1>Albums</h1>
+                    <p>Released albums</p>
                 </div>
 
+            </div>
 
-            </form>
+        </section>
+
+        <div id="centeringContainer">
+
+            <section class="memberPictures">
+
+                <div>
+                    <img class="photoSizing" src="images/Nayeon.jpg" alt="Nayeon">
+                    <p id="1" class="centerNames">Im Nayeon</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Jeongyeon.jpg" alt="Jeongyeon">
+                    <p id="2" class="centerNames">Yoo Jeongyeon</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Momo.jpg" alt="Momo">
+                    <p id="3" class="centerNames">Hirai Momo</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Sana.jpg" alt="Sana">
+                    <p id="4" class="centerNames" style="font-size: 24px">Minatozaki Sana</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Jihyo.jpg" alt="Jihyo">
+                    <p id="5" class="centerNames">Park Jihyo</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Mina.jpg" alt="Mina">
+                    <p id="6" class="centerNames">Myoui Mina</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Dahyun.jpg" alt="Dahyun">
+                    <p id="7" class="centerNames">Kim Dahyun</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Chaeyoung.jpg" alt="Chaeyoung">
+                    <p id="8" class="centerNames">Son Chaeyoung</p>
+                </div>
+
+                <div>
+                    <img class="photoSizing" src="images/Tzuyu.jpg" alt="Tzuyu">
+                    <p id="9" class="centerNames">Chou Tzuyu</p>
+                </div>
+
+            </section>
         </div>
 
-        <div id="successMessage" class="messageContainer">
-            <p>Sign-up was successful.</p>
-        </div>
 
-        <div id="errorMessage" class="messageContainer">
-            <p>*Please enter a correct email address.*</p>
-        </div>
+
+        <section class="signUpForm">
+
+            <div>
+                <div class="Register">
+                    <h2>Want to hear more about Twice?</h2>
+                    <p class="signUp">Sign-Up Here.</p>
+                </div>
+                
+            </div>
+            
+            <div class="confirm/error">
+                <div id="successMessage" class="messageContainer">
+                    <p>Sign-up was successful.</p>
+                </div>
+
+                <div id="errorMessage" class="messageContainer">
+                    <p>*Please enter a correct email address.*</p>
+                </div>
+
+                <div id="noName" class="messageContainer">
+                    <p>*Please provide your name*</p>
+                </div>
+            </div>
+
+                <form>
+                    <div>
+
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name" value=""><br>
+
+                        <label for="Email">Email:</label>
+                        <input type="text" id="Email" name="Email" value=""><br>
+
+
+                        <div class="btn submit">
+                            <input type="button" id="submitter" value="Submit">
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+        </section>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="signup.js"></script>
 
     </header>
-    </body>
+</body>
+
 </html>
+
+
+
+
+<!-- THIS IS KOUS ORIGINAL ATTEMPT -->
+<!-- <ul>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Nayeon.jpg" width = "300" height = "300" alt="Nayeon">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Jeongyeon.jpg" width = "300" height = "300" alt="Jeongyeon">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Momo.jpg" width = "300" height = "300" alt="Momo">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Sana.jpg" width = "300" height = "300" alt="Sana">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Jihyo.jpg" width = "300" height = "300" alt="Jihyo">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Mina.jpg" width = "300" height = "300" alt="Mina">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Dahyun.jpg" width = "300" height = "300" alt="Dahyun">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Chaeyoung.jpg" width = "300" height = "300" alt="Chaeyoung">
+        </figure>
+    </li>
+    <li>
+        <figure class="memberphotos">
+            <img src="images/Tzuyu.jpg" width = "300" height = "300" alt="Tzuyu">
+        </figure>
+    </li>
+    
+</ul> -->
