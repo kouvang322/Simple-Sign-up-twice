@@ -16,12 +16,12 @@ $(document).ready(function () {
 
 
 
-    //FUNCTION
+    //FUNCTION for submitter
     $('#submitter').click(function () {
 
         var userEmail = $('#Email').val();
         var userName = $('#Name').val();
-
+        
 
         //if it's empty have an alert
         if (!userName && !userEmail) {
@@ -46,11 +46,16 @@ $(document).ready(function () {
             return;
         }
 
+        //This line of code changes the text using concatenation
+        $('#signUpConfirmation').text("Thank you, " + userName + ". We will send you future updates to this email: " + userEmail);
+        
 
         //At this point we can assume that it is NOT empty AND it includes a @
         $('#successMessage').slideDown('slow');
         $('#errorMessage').slideUp();
         $('#noName').slideUp();
+
+        $('.messageContainer p').addClass('animate__animated animate__fadeInDown')
 
     })
 
@@ -78,8 +83,6 @@ $(document).ready(function () {
 
         $('.centerNames').hide();
     })
-
-
 
 
 }
