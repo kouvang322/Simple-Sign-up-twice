@@ -123,17 +123,19 @@ h1{
     margin: 25px;
 }
 
-.signUpForm{
+.signUpFormParentContainer{
     display: flex;
-    border-radius: 10%;
-    background-image: linear-gradient(rgba(187, 70, 70, 0.7), rgba(0, 0, 0, 0.7)), url(Images/Twicegroup.jpg);
-    background-repeat: no-repeat;
-    margin: 30px 20%;
+    justify-content: center;
 }
 
-/* #submissionFormContainer{
-    flex-grow: 0;
-} */
+#signUpFormChildContainer{
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    margin: 30px 20%;
+    background-image: linear-gradient(rgba(187, 70, 70, 0.7), rgba(0, 0, 0, 0.7)), url(Images/Twicegroup.jpg);
+    flex-shrink: 0;
+    width: 48%;
+}
 
 .signUp{
     margin-top: 20px;
