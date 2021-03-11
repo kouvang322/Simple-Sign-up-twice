@@ -21,43 +21,47 @@ $(document).ready(function () {
 
         var userEmail = $('#Email').val();
         var userName = $('#Name').val();
-        
+
 
         //if it's empty have an alert
         if (!userName && !userEmail) {
+            $('#successMessage').slideUp();
             $('#noName').slideDown('slow');
             $('#errorMessage').slideDown('slow');
-            $('#successMessage').slideUp();
             return;
         } else if (!userName && !(userEmail.indexOf("@") > -1)) {
+            $('#successMessage').slideUp();
             $('#noName').slideDown('slow');
             $('#errorMessage').slideDown('slow');
-            $('#successMessage').slideUp();
             return;
         } else if (!userEmail || !(userEmail.indexOf("@") > -1)) {
-            $('#errorMessage').slideDown('slow');
             $('#successMessage').slideUp();
             $('#noName').slideUp();
+            $('#errorMessage').slideDown('slow');
             return;
         } else if (!userName) {
-            $('#noName').slideDown('slow');
             $('#successMessage').slideUp();
             $('#errorMessage').slideUp();
+            $('#noName').slideDown('slow');
             return;
         }
 
-        //This line of code changes the text using concatenation
-        $('#signUpConfirmation').text("Thank you, " + userName + ". We will send you future updates to this email: " + userEmail);
-        
 
         //At this point we can assume that it is NOT empty AND it includes a @
-        $('#successMessage').slideDown('slow');
+
         $('#errorMessage').slideUp();
         $('#noName').slideUp();
 
-        $('.messageContainer p').addClass('animate__animated animate__fadeInDown')
+        $('#successMessage').slideDown('slow').delay(2000);
+
+        //This line of code changes the text using concatenation
+        //This line of code plugs in the text and then adds a class to animate it.
+        $('#signUpConfirmation').text("Thank you, " + userName + ". We will send you future updates to this email: " + userEmail).addClass('animate__animated animate__bounceInUp');
 
     })
+
+
+
 
 
     //GOOD EXAMPLE OF INTRICATE SIBLING SELECTORS

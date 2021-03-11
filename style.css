@@ -126,7 +126,7 @@ h1{
 .signUpFormParentContainer{
     display: flex;
     justify-content: center;
-    height: 73vh;
+    height: 720px;
 }
 
 #signUpFormChildContainer{
@@ -135,7 +135,7 @@ h1{
     margin: 30px 20%;
     background-image: linear-gradient(rgba(187, 70, 70, 0.7), rgba(0, 0, 0, 0.7)), url(Images/Twicegroup.jpg);
     flex-shrink: 0;
-    width: 77vh;
+    width: 720px;
 }
 
 .signUp{
