@@ -9,6 +9,17 @@ $(document).ready(function () {
     // $("#successMessage").hide();
 
 
+
+    $('.albumCarousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+
+    // $('.albumCarousel').slick();
+
     //Now I want to assign the targeted element's value to the variable I just created
     var userEmail = $('#Email').val();
 

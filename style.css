@@ -54,7 +54,7 @@ h1{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 385px;
+    margin-top: 90px;
     /* background-color: #000; */
 }
 
@@ -98,27 +98,38 @@ td, th {
 
 .twiceInfo{
     background-color: purple;
-    width: 60%;
+    width: 52%;
 }
 
 .members{
     background-color: pink;
-    width: 40%;
+    width: 44%;
 }
 
 .achievements{
     background-color:teal;
-    width: 25%;
+    width: 33%;
 }
 
 .pastConcerts{
     background-color: sienna;
-    width: 25%;
+    width: 26%;
+}
+
+.concertNames{
+    font-size: 22px;
+    margin: 30px;
 }
 
 .albums{
     background-color: mediumaquamarine;
-    width: 50%;
+    width: 29%;
+}
+
+
+.albumCovers{
+    width: 551px;
+    height: 530px;
 }
 
 .Register{
