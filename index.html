@@ -3,8 +3,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="Slick-album-animation/slick-1.8.1/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="Slick-album-animation/slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="Slick-album-animation/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="Slick-album-animation/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="Images/twicelogo.jpg">
@@ -89,8 +89,9 @@
 
             </div>
         </div>
+    </header>
 
-        <section>
+    <section class="secondSection">
             <div class="flex-container">
 
                 <div class="achievements">
@@ -158,6 +159,10 @@
                         <div>
                             <img class="albumCovers" src="images/DTNA.jpg">
                         </div>
+                        
+                        <div>
+                            <img class="albumCovers" src="images/Merry&Happy.jpg">
+                        </div>
 
                         <div>
                             <img class="albumCovers" src="images/Fancy.jpg">
@@ -180,8 +185,8 @@
 
             </div>
 
-        </section>
-
+    </section>
+    <section>
         <div id="centeringContainer" class="twiceColorGradient">
 
             <section class="memberPictures">
@@ -233,61 +238,59 @@
 
             </section>
         </div>
-
+    </section>
         <!-- This section is the main FLEX container/parent container -->
-        <section class="signUpFormParentContainer">
-
-            <!-- This div element wraps around the important stuff of the submission form.
-            So we style IT rather than the parent container -->
-            <div id="signUpFormChildContainer">
-                <div>
-                    <div class="Register">
-                        <h1>Want to hear more about Twice?</h1>
-                        <p class="signUp">Sign-Up Here.</p>
-                    </div>
-
-                </div>
-
-                <div>
-                    <div id="successMessage" class="messageContainer">
-                        <!-- TEXT APPEARS HERE -->
-
-                        <p id="signUpConfirmation">
-                            <!-- This line of code is reserving space so that the animation doesn't appear choppy -->
-                            "Thank you, [NAME] We will send you future updates to this email: [EMAIL]
-                        </p>
-
-                    </div>
-                    <div id="errorMessage" class="messageContainer">
-                        <p>*Please enter a correct email address.*</p>
-                    </div>
-                    <div id="noName" class="messageContainer">
-                        <p>*Please provide your name*</p>
-                    </div>
-                </div>
-                <form>
-                    <div>
-                        <label for="Name">Name:</label>
-                        <input type="text" id="Name" name="Name" value=""><br>
-                        <label for="Email">Email:</label>
-                        <input type="text" id="Email" name="Email" value=""><br>
-                        <div class="btn submit">
-                            <input type="button" id="submitter" value="Submit">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-        </section>
+      
+        <footer>
+          
+          <section class="signUpFormParentContainer">
+              <!-- This div element wraps around the important stuff of the submission form.
+              So we style IT rather than the parent container -->
+              <div id="signUpFormChildContainer">
+                  <div>
+                      <div class="Register">
+                          <h1>Want to hear more about Twice?</h1>
+                          <p class="signUp">Sign-Up Here.</p>
+                      </div>
+                  </div>
+                  <div>
+                      <div id="successMessage" class="messageContainer">
+                          <!-- TEXT APPEARS HERE -->
+                          <p id="signUpConfirmation">
+                              <!-- This line of code is reserving space so that the animation doesn't appear choppy -->
+                              "Thank you, [NAME] We will send you future updates to this email: [EMAIL]
+                          </p>
+                      </div>
+                      <div id="errorMessage" class="messageContainer">
+                          <p>*Please enter a correct email address.*</p>
+                      </div>
+                      <div id="noName" class="messageContainer">
+                          <p>*Please provide your name*</p>
+                      </div>
+                  </div>
+                  <form>
+                      <div>
+                          <label for="Name">Name:</label>
+                          <input type="text" id="Name" name="Name" value=""><br>
+                          <label for="Email">Email:</label>
+                          <input type="text" id="Email" name="Email" value=""><br>
+                          <div class="btn submit">
+                              <input type="button" id="submitter" value="Submit">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </section>
+      </footer>
 
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="Slick-album-animation/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="Slick-album-animation/slick-1.8.1/slick/slick.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="signup.js"></script>
 
-    </header>
+   
 </body>
 
 </html>

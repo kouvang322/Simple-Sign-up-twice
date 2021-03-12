@@ -17,9 +17,26 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/twice-1.webp);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     background-attachment: fixed;
 }
+
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/Twice-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.secondSection{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/twice-2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
 
 h1{
     text-align: center;
@@ -54,8 +71,7 @@ h1{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 90px;
-    /* background-color: #000; */
+    padding: 25px;
 }
 
 .photoSizing{
